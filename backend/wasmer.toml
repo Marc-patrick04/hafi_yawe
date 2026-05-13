@@ -1,0 +1,14 @@
+[package]
+name = "hafi-backend"
+version = "1.0.0"
+
+[scripts]
+build = "composer install --no-dev --optimize-autoloader"
+start = "php artisan serve --host=0.0.0.0 --port=8080"
+
+[env]
+APP_ENV = "production"
+APP_DEBUG = "false"
+
+[dependencies]
+php = "8.2"
